@@ -1,0 +1,129 @@
+body,html{
+    margin:0;
+    background: rgb(240, 236, 236);
+    height:100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#my-nav{
+    margin-bottom: 0;
+}
+
+
+#question-main-container{
+    width:720px;
+    height:100%;
+    margin:0 auto;
+    overflow: auto;
+    background: #fff;
+    padding: 30px 20px;
+
+    #input-question-container{
+        width:100%;
+        
+        .form-group{
+            width:100%;
+            display: flex;
+            input[name]{
+                flex:1; 
+                width:100%;
+                padding:10px 8px;
+            }
+        
+            #submit-btn{
+                width:100px;
+                margin-left: 30px;
+            }
+        }
+
+        .anonymous-checkbox{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            input,label{
+                margin:0 0 0 10px;
+            }
+        }
+    }
+
+    // .error{
+    //     width:100%;
+    //     padding:8px;
+    //     border:1px solid rgb(226, 33, 33);
+    //     color:rgb(226, 33, 33);
+    //     margin-top:12px;
+    // }
+
+    h1{
+        margin-top:0;
+    }
+
+    #question-item{
+        border:1px solid #ccc;
+        width:100%;
+        padding:20px 16px;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+        margin-bottom: 15px;
+        position: relative;
+
+        p{
+            margin:0;
+            margin-bottom:15px;
+        }
+
+        .time{
+            position: absolute;
+            font-size: 12px;
+            color: #ccc;
+            // margin-top:15px;
+            left:16px;
+            bottom:12px;
+        }
+
+        .delete-btn{          
+            position: absolute;
+            right:10px;
+            top: 10px;
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+            line-height: 32px;
+            text-align: center;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    #paging{
+        text-align: center;
+    }
+    // #post-iframe{
+    //     display:none;
+    // }
+
+    // #delete-iframe{
+    //     display:none;
+    // }
+}
+
+@media screen and (max-width:720px){
+    #question-main-container{
+        width:100%;
+
+        #input-question-container{
+
+            .form-group{
+                flex-direction: column;
+
+                #submit-btn{
+                    width:100%;
+                    margin:12px 0 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+body,
+html {
+  margin: 0;
+  background: #f0ecec;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+#my-nav {
+  margin-bottom: 0;
+}
+#question-main-container {
+  width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+  background: #fff;
+  padding: 30px 20px;
+}
+#question-main-container #input-question-container {
+  width: 100%;
+}
+#question-main-container #input-question-container .form-group {
+  width: 100%;
+  display: flex;
+}
+#question-main-container #input-question-container .form-group input[name] {
+  flex: 1;
+  width: 100%;
+  padding: 10px 8px;
+}
+#question-main-container #input-question-container .form-group #submit-btn {
+  width: 100px;
+  margin-left: 30px;
+}
+#question-main-container #input-question-container .anonymous-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#question-main-container #input-question-container .anonymous-checkbox input,
+#question-main-container #input-question-container .anonymous-checkbox label {
+  margin: 0 0 0 10px;
+}
+#question-main-container h1 {
+  margin-top: 0;
+}
+#question-main-container #question-item {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 20px 16px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
+  position: relative;
+}
+#question-main-container #question-item p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+#question-main-container #question-item .time {
+  position: absolute;
+  font-size: 12px;
+  color: #ccc;
+  left: 16px;
+  bottom: 12px;
+}
+#question-main-container #question-item .delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  line-height: 32px;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+#question-main-container #paging {
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  #question-main-container {
+    width: 100%;
+  }
+  #question-main-container #input-question-container .form-group {
+    flex-direction: column;
+  }
+  #question-main-container #input-question-container .form-group #submit-btn {
+    width: 100%;
+    margin: 12px 0 0;
+  }
+}
